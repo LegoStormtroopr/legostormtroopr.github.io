@@ -6,4 +6,4 @@ layout: page
 ---
 If you have ever seen me present at a conference, you've probably seen a picture of my adorable dwarf lop rabbit Inara.
 
-![Probably my favourite photo of her](https://lh3.googleusercontent.com/wW1Z3tpzQKx5gZKWyCedcaI8KW0CLeQ6xFJqn4n0kdDdNtyhQ6AFaL6exNFsaXKh4iPiGQ6sOsKEpAQzfJndJLYQhEa6z4TAH0QC_HZ95Ki4CopJApZSrGy6hf0OUbNHWTE6mVFgLvt3tWYI0LwAs-aubo3qJAFKGglJIH1LVXJx2oE31z8gzkzCkznZB_U70BRr77UVKs93eXJ4nYHOobQ4C3v_NrhZNMraD1sTAIBWMfHr34iMlpuSrqOKAexLZgVwJ2Aj0S9Pf8vP0OjVDRXNzmV5_OfgdPbLRnRivx2j6LyijzzA2qJMwgltYU3uShO-ZdwwcrkRWpJlqeixL1kdOS67F2zlNBQhOzwtMv3udMP_MsME_joFUqmXdC632omv8EHfS3bXI1CMZY9oKwf7K1mPbX4ulaZKECuSS_hMnjVFppTUn9Qt32B6VUmrIe8RZw4bYrqRE5WwU3q9tIQxb0KrkjXryriYnUiDnhdSBIHdQJ7tK3D-xCJVhAKc3bExEUi30rbgZ-gPYOxUAObqO8fU2Ya3Fsg8ISU3-GvLZ-6lz-ZroK_ztTB3GDH4zjYZ=w640-h480-no)
+![Probably my favourite photo of her](/bunny/photos/bunny_keyboard_2.jpg)
