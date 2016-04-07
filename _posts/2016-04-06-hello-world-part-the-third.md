@@ -1,6 +1,5 @@
 ---
 title: Hello world - part the third!
-date: 2010-03-10T13:41:00+00:00
 author: Samuel Spencer
 layout: post
 categories:
