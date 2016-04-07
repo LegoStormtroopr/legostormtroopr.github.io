@@ -30,9 +30,10 @@ footer {
     color:#999;
     padding-top:12px;
 }
-footer pre {
+footer tt {
     font-size:12pt;
     text-align:center;
+    display:block;
 }
 
 /* blog.html */
