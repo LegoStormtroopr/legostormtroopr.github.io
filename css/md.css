@@ -1,0 +1,22 @@
+h1:before {content:"#"}
+h2:before {content:"##"}
+h3:before {content:"###"}
+h1:before,h2:before,h3:before{
+    opacity: 0.2;
+    padding-right:3px;
+}
+li {
+    list-style-type: none;
+    padding-left:1em;
+}
+li:before {
+    content:"*";
+    font-family: monospace;
+    top:3px;
+    max-width:0px;
+    position:relative;
+    left:-1em;
+    padding-right: 3px;
+    color:#999;
+    display:inline-block;
+}

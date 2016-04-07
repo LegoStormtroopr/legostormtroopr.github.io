@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">All Posts</h1>
+
+  {% for post in site.posts limit:1 %}
+      Most recent article:
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p>{{ post.content | strip_html | truncatewords:50}}</p>
+      <a class="read-more" href="{{ post.url }}">Read more <i class="fa fa-long-arrow-right"></i></a>
+  {% endfor %}
+<hr>
+  <h2>Older posts</h2>
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h3 id="{{ this_year }}-ref">{{this_year}}</h3>
+    <ul>
+        <li class="list_month">{{this_month}}</li>
+    {% endif %}
+
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% if this_month != next_month and this_year == next_year %}
+        <li class="list_month">{{next_month}}</li>
+    {% endif %}
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h3 id="{{ next_year }}-ref">{{next_year}}</h3>
+        <ul>
+        <li class="list_month">{{this_month}}</li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+</div>

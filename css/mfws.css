@@ -1,0 +1,50 @@
+/* (c) http://bettermotherfuckingwebsite.com/ */
+
+body{
+    margin:40px auto;
+    max-width:650px;
+    line-height:1.6;
+    font-size:18px;
+    color:#444;
+    padding:0 10px;
+}
+h1,h2,h3{line-height:1.2}
+
+a {
+    color:#3C598E;
+    text-decoration:none;
+    border-bottom:1px dotted rgba(100,149,237,0.5);
+}
+img {
+    max-width:100%;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid #3C598E;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #3C598E;
+    color:#999;
+    padding-top:12px;
+}
+footer pre {
+    font-size:12pt;
+    text-align:center;
+}
+
+/* blog.html */
+.list_month:before {
+    content:'';
+}
+.list_month {
+    margin-top:13px;
+    border-top:1px solid rgba(128,128,128,0.5);
+}
+
+/* post.html */
+.post-content {
+    text-align: justify;
+}
