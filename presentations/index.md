@@ -7,7 +7,7 @@ layout: page
 ---
 #### Papers:
 
-  * 2010-11-14 &#8211; _Factors Influencing Participation and Frequency of Contact of Indigenous Australians with the Criminal Justice System: An Analysis of the 2008 National Aboriginal and Torres Strait Islander Social Survey (NATSISS). - Undergraduate thesis in Applied Statistics, supervised by Prof. Robin Milne.
+  * 2010-11-14 &#8211; Factors Influencing Participation and Frequency of Contact of Indigenous Australians with the Criminal Justice System: An Analysis of the 2008 National Aboriginal and Torres Strait Islander Social Survey (NATSISS). - Undergraduate thesis in Applied Statistics, supervised by Prof. Robin Milne.
 
 #### Presentations:
 
@@ -18,4 +18,4 @@ layout: page
 #### Media Mentions:
 
   * 2011-08-25 &#8211; [Census collectors finish mammoth task in the snow](http://web.archive.org/web/20120531021120/http://www.summitsun.com.au/news/local/news/general/census-collectors-finish-mammoth-task-in-the-snow/2270704.aspx), Summit Sun
-  * 2015-10-21 &#8211; [Parkes Way tunnel closed: Canberra battles through peak hour](https://web.archive.org/web/20160315234233/http://www.canberratimes.com.au/act-news/parkes-way-tunnel-closed-canberra-battles-through-peak-hour-20151020-gke516.html)
+  * 2015-10-21 &#8211; [Parkes Way tunnel closed: Canberra battles through peak hour](https://web.archive.org/web/20160315234233/http://www.canberratimes.com.au/act-news/parkes-way-tunnel-closed-canberra-battles-through-peak-hour-20151020-gke516.html), Canberra Times
