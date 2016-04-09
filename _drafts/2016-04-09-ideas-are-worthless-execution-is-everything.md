@@ -6,7 +6,7 @@ categories:
   - Drivel
 ---
 
-[This is a pretty great article]() that resonates with me. I won't go so far as to paraphrase the whole thing,
+[This is a pretty great article](https://www.databaselabs.io/blog/Startup-ideas-are-worthless-execution-is-everything) that resonates with me. I won't go so far as to paraphrase the whole thing,
 you should read it, but it can be summed up by its headings:
 
 * If you're the only one with that idea... something's wrong.
