@@ -1,5 +1,5 @@
 ---
-title: Limiting the number of objects in a django database
+title: Limiting the number of objects for a model in a django database
 author: Samuel Spencer
 layout: post
 categories:
@@ -13,7 +13,8 @@ especially not for objects you don't control, such as the `django.auth.User` mod
 
 However, with some tweaking, this is actually quite easy.
 
-The first step is to setup a [django signal](https://docs.djangoproject.com/en/1.9/topics/signals/) to catch the particular model:
+The first step is to setup a [django signal](https://docs.djangoproject.com/en/1.9/topics/signals/) to
+catch the particular model *before* it is saved:
 
 ```python
     from django.core.exceptions import PermissionDenied
