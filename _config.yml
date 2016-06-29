@@ -11,6 +11,7 @@ email: theodore.therone@gmail.com
 url: http://www.kidstrythisathome.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kidstrythisathome.com" # the base hostname & protocol for your site
+permalink: :year/:month/:slug.html
 
 # Build settings
 markdown: kramdown

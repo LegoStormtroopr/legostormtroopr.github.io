@@ -7,3 +7,5 @@ layout: page
 If you have ever seen me present at a conference, you've probably seen a picture of my adorable dwarf lop rabbit Inara.
 
 ![Probably my favourite photo of her](/bunny/photos/bunny_keyboard_2.jpg)
+
+<!-- Inara - 2008-2016 -->
