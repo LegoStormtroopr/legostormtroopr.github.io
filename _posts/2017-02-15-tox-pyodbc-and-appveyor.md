@@ -26,7 +26,7 @@ For example, you are running Python x86 with the x64 version of PyODBC to connec
 Worse still, if you Google search for this issue, the top results will *all* describe this as the exact problem,
 but changing your ODBC driver won't fix this if you are running tox! Its a different problem entirely.
 
-The problem is (and its subtle) is that PyODBC can't find the correct driver and its because tox is removing the
+The problem is (and its subtle) is that PyODBC (or a library it calls) can't find the correct driver and its because tox is removing the
 environment variables PyODBC needs. But, there is an easy fix by
 [getting tox to pass the ``WINDIR`` variable in](http://tox.readthedocs.io/en/latest/example/basic.html?highlight=passenv#passing-down-environment-variables)
 , like so:
