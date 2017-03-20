@@ -9,46 +9,46 @@ categories:
 
 You're running your Django app in the cloud, and you want to be able to track your logs with AWS CloudWatch? Easy!
 
-* Step 1: Install [Python WatchTower](https://watchtower.readthedocs.io/en/latest/) - `pip install watchtower`
+  * Step 1: Install [Python WatchTower](https://watchtower.readthedocs.io/en/latest/) - `pip install watchtower`
 
-* Step 2: Set up your AWS credentials with the `awscli` - fun fact this also [works with Temporary Credentials on EC2](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
+  * Step 2: Set up your AWS credentials with the `awscli` - fun fact this also [works with Temporary Credentials on EC2](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
 
-* Step 3: Change up your `LOGGING` settings in your Django settings - make sure at least one handler has `'class': 'watchtower.CloudWatchLogHandler',`
+  * Step 3: Change up your `LOGGING` settings in your Django settings - make sure at least one handler has `'class': 'watchtower.CloudWatchLogHandler',`
 
-  ```
-  LOGGING = {
-      'version': 1,
-      'handlers': {
-          'watchtower':  {
-              'level': 'DEBUG',  # Or some more appropriate level
-              'class': 'watchtower.CloudWatchLogHandler',
+      ```
+      LOGGING = {
+          'version': 1,
+          'handlers': {
+              'watchtower':  {
+                  'level': 'DEBUG',  # Or some more appropriate level
+                  'class': 'watchtower.CloudWatchLogHandler',
+              },
           },
-      },
-      'loggers': {
-          'django': {
-              'handlers': ['watchtower'],
-              'level': 'DEBUG',  # Or some more appropriate level
-              'propagate': True,
-          },
+          'loggers': {
+              'django': {
+                  'handlers': ['watchtower'],
+                  'level': 'DEBUG',  # Or some more appropriate level
+                  'propagate': True,
+              },
+          }
       }
-  }
-  ```
+      ```
 
-* Step 4: Make sure you have the following permissions setup for the AWS IAM user:
+  * Step 4: Make sure you have the following permissions setup for the AWS IAM user:
 
-  ```
-    {
-        "Effect": "Allow",
-        "Action": [
-            "logs:CreateLogGroup",
-            "logs:CreateLogStream",
-            "logs:PutLogEvents"
-        ],
-        "Resource": [
-            "arn:aws:logs:<YOUR_REGION>:<YOUR_INSTANCE>:log-group:watchtower:log-stream:*"
-        ]
-    }
-  ```
+      ```
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:<YOUR_REGION>:<YOUR_INSTANCE>:log-group:watchtower:log-stream:*"
+            ]
+        }
+      ```
   
   If you don't know what `<YOUR_REGION>` or `<YOUR_INSTANCE>` should be, monitor your console and it will become *painfully* obvious.
 
