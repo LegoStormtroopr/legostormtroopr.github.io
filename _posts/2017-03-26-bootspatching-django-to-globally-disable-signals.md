@@ -41,6 +41,7 @@ if os.environ.get('django_SIGNALS_NO_SIGNALLING', None) and \
 ```
 
 Now, I think this goes beyond regular monkey-patching as this is patching to effectively disable a regular action.
+
 ---
 
 Here, we disable the Django `Signal` object from signalling by overriding the `Signal.send` and `Signal.send_robust`
