@@ -40,7 +40,7 @@ if os.environ.get('django_SIGNALS_NO_SIGNALLING', None) and \
     Signal.send_robust = send_robust
 ```
 
-Now, I think this goes beyond regular monkey-patching as this is patching to effectively disable a regular action.
+Now, I think this goes beyond regular monkey-patching as this is patching to effectively disable a regular and expected action.
 
 ---
 
@@ -48,13 +48,16 @@ Here, we disable the Django `Signal` object from signalling by overriding the `S
 methods with blank methods.
 
 To check if the patch should be applied, there is an explicit check against the "Signals no signalling" enivronment 3 times,
-both to highlight the Swiper/Boots-patching joke.
+both to highlight the potentially dangerous behaviour and to reinforce the (terrible) Swiper/Boots-patching joke.
 
 ---
 
 In Dora the Explorer, Dora (and her monkey Boots) often encounter Swiper.
 Swiper's *raison d'être* is to swipe thing, and will always Swipe things.
 The only way to override this intrinsic behaviour is to say "Swiper, no swiping" three times.
+
+Just as Swiper exists to swipe, Django signals exist to signal - so by Boots-patching we really
+are changing the intrinsic and expected behaviour of the object.
 
 ![Swiper, Dora and Boots - Swiper, no Swiping!](https://cloud.githubusercontent.com/assets/2173174/24339067/5217855c-12f5-11e7-97ba-a528683e4c1d.png)
 
