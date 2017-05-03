@@ -13,7 +13,8 @@ If this instance is a Django service, regardless of the page accessed, this call
 
 There are two ways around this, either:
 
-a. Add every IP from every private IP range into your Django project's ALLOWED_HOSTS settings b. Add a simple middleware that returns a simple 200 response, given the specific URL.
+1. Add every IP from every private IP range into your Django project's ALLOWED_HOSTS settings
+2. Add a simple middleware that returns a simple 200 response, given the specific URL.
 
 The second option is shown below:
 
