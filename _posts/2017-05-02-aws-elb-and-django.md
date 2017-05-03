@@ -15,8 +15,7 @@ There are two ways around this, either:
 
 a. Add every IP from every private IP range into your Django project's ALLOWED_HOSTS settings b. Add a simple middleware that returns a simple 200 response, given the specific URL.
 
-The second option is shown below.
-Raw
+The second option is shown below:
 
 {% gist LegoStormtroopr/7a80e170bd3943b6a37a3bd45a918a0b healthchecker_middleware.py %}
 
